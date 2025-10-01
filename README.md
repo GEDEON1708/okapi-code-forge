@@ -85,9 +85,20 @@ Veja a landing page em funcionamento:
 
 Acesse `http://localhost:5173` no navegador.
 
+
 ## 📦 Deploy
 
-Pronto para ser publicado no GitHub Pages, Vercel, Netlify ou qualquer serviço de hospedagem estática.
+### Vercel
+
+Para publicar no Vercel, configure:
+
+- **Framework Preset:** Vite
+- **Build Command:** `vite build`
+- **Output Directory:** `dist`
+
+No painel do Vercel, ajuste essas opções nas configurações do projeto antes de fazer o deploy.
+
+Pronto para ser publicado também no GitHub Pages, Netlify ou qualquer serviço de hospedagem estática.
 
 ## 📞 Contato
 
