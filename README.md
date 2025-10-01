@@ -20,13 +20,21 @@ A Okapi Code Forge é uma empresa especializada em criar identidades digitais ú
 
 Inspirados pelo Okapi, animal raro e singular, acreditamos que cada negócio merece uma presença digital única. Forjamos soluções digitais sob medida, combinando criatividade, tecnologia de ponta e foco em resultados.
 
+
 ## 🖥️ Tecnologias Utilizadas
 
-- React 19
-- Vite
-- TypeScript
-- TailwindCSS
-- SEO otimizado
+<div align="center">
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="48" />
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vite/vite-original.svg" alt="Vite" width="48" />
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="48" />
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" width="48" />
+</div>
+
+- **React 19**
+- **Vite**
+- **TypeScript**
+- **TailwindCSS**
+- **SEO otimizado**
 
 ## 📱 Responsividade
 
