@@ -1,9 +1,6 @@
 
 # Okapi Code Forge - Soluções Digitais
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" alt="Banner Okapi Code Forge" width="100%" />
-</div>
 
 ## 🚀 Landing Page Profissional
 
@@ -22,49 +19,24 @@ Inspirados pelo Okapi, animal raro e singular, acreditamos que cada negócio mer
 
 
 
+
 ## 🖥️ Tecnologias Utilizadas
 
-<div align="center">
-   <table>
-      <tr>
-         <td align="center">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="48" /><br/>
-            <b>React 19</b>
-            <br/>
-            <sub>Framework para interfaces modernas e dinâmicas</sub>
-         </td>
-         <td align="center">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vite/vite-original.svg" alt="Vite" width="48" /><br/>
-            <b>Vite</b>
-            <br/>
-            <sub>Build tool ultrarrápida para projetos web</sub>
-         </td>
-         <td align="center">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="48" /><br/>
-            <b>TypeScript</b>
-            <br/>
-            <sub>Tipagem estática para JavaScript moderno</sub>
-         </td>
-         <td align="center">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" width="48" /><br/>
-            <b>TailwindCSS</b>
-            <br/>
-            <sub>Estilização rápida e responsiva via utilitários</sub>
-         </td>
-      </tr>
-   </table>
-</div>
-
+- **React 19**: Framework para interfaces modernas e dinâmicas
+- **Vite**: Build tool ultrarrápida para projetos web
+- **TypeScript**: Tipagem estática para JavaScript moderno
+- **TailwindCSS**: Estilização rápida e responsiva via utilitários
+- **Node.js**: Ambiente de execução para desenvolvimento e build
 - **SEO otimizado**: Estrutura e meta tags para melhor indexação e compartilhamento
 
 ## 📱 Responsividade
 
 A landing page se adapta perfeitamente a qualquer dispositivo: desktop, tablet ou smartphone.
 
+
 ## 🔗 Demonstração
 
-Veja a landing page em funcionamento:
-[AI Studio - Okapi Code Forge](https://ai.studio/apps/drive/1hWU8yGJLSws7zdIf8N_B-5te3PZxj51h)
+Veja a landing page em funcionamento em seu próprio domínio ou hospedagem após o deploy.
 
 ## 🛠️ Como rodar localmente
 
