@@ -86,17 +86,31 @@ Veja a landing page em funcionamento:
 Acesse `http://localhost:5173` no navegador.
 
 
+
 ## 📦 Deploy
 
-### Vercel
+### Deploy perfeito no Vercel
 
-Para publicar no Vercel, configure:
+1. No painel do Vercel, selecione o projeto e configure:
+   - **Framework Preset:** Vite
+   - **Build Command:** `vite build`
+   - **Output Directory:** `dist`
 
-- **Framework Preset:** Vite
-- **Build Command:** `vite build`
-- **Output Directory:** `dist`
+2. Certifique-se que o arquivo `index.html` está na raiz do projeto (como está).
 
-No painel do Vercel, ajuste essas opções nas configurações do projeto antes de fazer o deploy.
+3. O comando de build já está correto no `package.json`:
+   ```json
+   "build": "vite build"
+   ```
+
+4. Após o deploy, acesse a URL gerada pelo Vercel. Se aparecer erro 404, confira se o diretório de saída está como `dist` e se não há subpasta extra.
+
+5. Para testar localmente o build antes do deploy:
+   ```bash
+   npm run build
+   npm run preview
+   ```
+   Acesse o endereço informado no terminal para garantir que o site está funcionando.
 
 Pronto para ser publicado também no GitHub Pages, Netlify ou qualquer serviço de hospedagem estática.
 
