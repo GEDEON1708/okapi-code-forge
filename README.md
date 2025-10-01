@@ -21,20 +21,41 @@ A Okapi Code Forge é uma empresa especializada em criar identidades digitais ú
 Inspirados pelo Okapi, animal raro e singular, acreditamos que cada negócio merece uma presença digital única. Forjamos soluções digitais sob medida, combinando criatividade, tecnologia de ponta e foco em resultados.
 
 
+
 ## 🖥️ Tecnologias Utilizadas
 
 <div align="center">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="48" />
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vite/vite-original.svg" alt="Vite" width="48" />
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="48" />
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" width="48" />
+   <table>
+      <tr>
+         <td align="center">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="48" /><br/>
+            <b>React 19</b>
+            <br/>
+            <sub>Framework para interfaces modernas e dinâmicas</sub>
+         </td>
+         <td align="center">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vite/vite-original.svg" alt="Vite" width="48" /><br/>
+            <b>Vite</b>
+            <br/>
+            <sub>Build tool ultrarrápida para projetos web</sub>
+         </td>
+         <td align="center">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="48" /><br/>
+            <b>TypeScript</b>
+            <br/>
+            <sub>Tipagem estática para JavaScript moderno</sub>
+         </td>
+         <td align="center">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" width="48" /><br/>
+            <b>TailwindCSS</b>
+            <br/>
+            <sub>Estilização rápida e responsiva via utilitários</sub>
+         </td>
+      </tr>
+   </table>
 </div>
 
-- **React 19**
-- **Vite**
-- **TypeScript**
-- **TailwindCSS**
-- **SEO otimizado**
+- **SEO otimizado**: Estrutura e meta tags para melhor indexação e compartilhamento
 
 ## 📱 Responsividade
 
