@@ -1,5 +1,8 @@
+
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
+import { Sun, MoonStars } from 'lucide-react';
+
 
 
 const ThemeToggle: React.FC = () => {
@@ -12,17 +15,9 @@ const ThemeToggle: React.FC = () => {
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        // Ícone tecnológico para dark mode
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-neon-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <circle cx="12" cy="12" r="7" stroke="#0abdc6" strokeWidth="2" fill="#272640" />
-          <path d="M12 5V3M12 21v-2M5 12H3M21 12h-2M7.8 7.8L6.4 6.4M16.2 16.2l1.4 1.4M16.2 7.8l1.4-1.4M7.8 16.2l-1.4 1.4" stroke="#0abdc6" strokeWidth="2" />
-        </svg>
+        <MoonStars size={24} strokeWidth={2.2} className="text-neon-cyan" />
       ) : (
-        // Ícone tecnológico para light mode
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <circle cx="12" cy="12" r="7" stroke="#facc15" strokeWidth="2" fill="#fff" />
-          <path d="M12 5V3M12 21v-2M5 12H3M21 12h-2M7.8 7.8L6.4 6.4M16.2 16.2l1.4 1.4M16.2 7.8l1.4-1.4M7.8 16.2l-1.4 1.4" stroke="#facc15" strokeWidth="2" />
-        </svg>
+        <Sun size={24} strokeWidth={2.2} className="text-yellow-300" />
       )}
     </button>
   );
