@@ -9,8 +9,8 @@ const SplashScreen: React.FC = () => {
       {/* Fundo gradiente estático */}
       <div className="absolute inset-0 w-full h-full pointer-events-none" style={{background: 'linear-gradient(135deg, #272640 0%, #05020a 100%)'}} />
 
-      {/* Glow atrás do logo com movimento, sem borda */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none animate-glow-move">
+      {/* Glow atrás do logo, sem animação */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div style={{
           width: '420px',
           height: '420px',
@@ -30,32 +30,7 @@ const SplashScreen: React.FC = () => {
         </span>
       </div>
 
-      {/* Animações customizadas */}
-      <style>{`
-        @keyframes splashIn {
-          0% { opacity: 0; transform: scale(0.95); }
-          100% { opacity: 1; transform: scale(1); }
-        }
-        .animate-splash-in {
-          animation: splashIn 1.2s cubic-bezier(0.4,0,0.2,1) forwards;
-        }
-        @keyframes bgMove {
-          0% { transform: scale(1) translateY(0); }
-          50% { transform: scale(1.08) translateY(-30px); }
-          100% { transform: scale(1) translateY(0); }
-        }
-        .animate-bg-move {
-          animation: bgMove 1.5s ease-in-out infinite;
-        }
-        @keyframes glowMove {
-          0% { transform: scale(1) translateY(0); opacity: 0.8; }
-          50% { transform: scale(1.12) translateY(-18px); opacity: 1; }
-          100% { transform: scale(1) translateY(0); opacity: 0.8; }
-        }
-        .animate-glow-move {
-          animation: glowMove 1.5s ease-in-out infinite;
-        }
-      `}</style>
+      {/* Removido animações para carregamento mais rápido */}
     </div>
   );
 };
