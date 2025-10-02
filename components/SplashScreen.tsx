@@ -6,21 +6,8 @@ import React from 'react';
 const SplashScreen: React.FC = () => {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center select-none transition-all duration-700 overflow-hidden" style={{background: 'linear-gradient(135deg, #272640 0%, #05020a 100%)'}}>
-      {/* Fundo animado tecnológico */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none animate-bg-move">
-        <svg width="100%" height="100%" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" style={{position: 'absolute', left: 0, top: 0}}>
-          <ellipse cx="960" cy="540" rx="700" ry="320" fill="url(#grad1)" opacity="0.18">
-            <animate attributeName="rx" values="700;750;700" dur="3s" repeatCount="indefinite" />
-            <animate attributeName="ry" values="320;350;320" dur="3s" repeatCount="indefinite" />
-          </ellipse>
-          <defs>
-            <radialGradient id="grad1" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
-              <stop offset="0%" stopColor="#7e22ce" />
-              <stop offset="100%" stopColor="#05020a" />
-            </radialGradient>
-          </defs>
-        </svg>
-      </div>
+      {/* Fundo gradiente estático */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none" style={{background: 'linear-gradient(135deg, #272640 0%, #05020a 100%)'}} />
 
       {/* Glow atrás do logo com movimento, sem borda */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none animate-glow-move">
