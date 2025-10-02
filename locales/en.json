@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "contact_mobile": "Get in Touch"
+  },
+  "hero": {
+    "title1": "Forging Unique",
+    "title2": "Digital Identities",
+    "subtitle": "At Okapi Code Forge, we turn ideas into digital reality. We create websites, landing pages, and e-commerce stores with design and technology that define the future.",
+    "cta": "Let's Build Your Future"
+  },
+  "about": {
+    "title1": "Inspired by",
+    "title2": "Uniqueness",
+    "p1": "The Okapi, an enigmatic animal from the rainforest, is known for its unique coat - a mix that defies categorization. No two coats are the same. This inspiring diversity is at the core of our philosophy at Okapi Code Forge.",
+    "p2": "We believe that every business, like the Okapi, has a singular identity that deserves to be highlighted. We reject generic solutions. Instead, we dive into the essence of your brand to forge a digital presence that is unmistakably yours.",
+    "p3": "Our mission is to create a digital solution as unique as your vision, combining futuristic design with the most robust technology."
+  },
+  "services": {
+    "title1": "Our",
+    "title2": "Services",
+    "cards": {
+      "business": {
+        "title": "Business Websites",
+        "description": "We build your company's online presence with a professional, responsive, and SEO-optimized website, perfectly reflecting your brand."
+      },
+      "landing": {
+        "title": "Landing Pages",
+        "description": "Conversion-focused landing pages with captivating design and persuasive copy to maximize the results of your marketing campaigns."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Complete, secure, and scalable online stores. Offer the best shopping experience for your customers and boost your online sales."
+      },
+      "more": {
+        "title": "And much more...",
+        "description": "Our forge is always active. Soon, we will offer new digital solutions to take your business to even greater heights. Stay tuned!"
+      }
+    }
+  },
+  "projects": {
+    "title1": "Featured",
+    "title2": "Projects",
+    "cta_view": "View Site",
+    "cards": {
+      "busca_sousa": {
+        "title": "Busca Sousa",
+        "description": "An innovative platform to connect users with local businesses and services in the city of Sousa-PB, strengthening the local economy."
+      },
+      "okapi_watch": {
+        "title": "Okapi Watch Store",
+        "description": "An elegant e-commerce for selling watches, focusing on a fluid user experience and sophisticated design."
+      },
+      "coffee_store": {
+        "title": "Coffee Store Page",
+        "description": "An immersive landing page for a coffee shop, designed to captivate coffee lovers with a cozy look and rich information."
+      }
+    }
+  },
+  "cta": {
+    "title1": "Ready to",
+    "title2": "Forge",
+    "title3": "Your Digital Future?",
+    "subtitle": "Your idea deserves a unique digital identity. Let's talk about how we can turn your vision into reality.",
+    "button": "Start Project"
+  },
+  "footer": {
+    "tagline": "Forging the future of the web with code, creativity, and unique solutions.",
+    "contact_title": "Quick Contact",
+    "social_title": "Follow Us",
+    "rights": "All rights reserved"
+  }
+}

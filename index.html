@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF--8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okapi Code Forge - Criação de Sites e Soluções Digitais</title>
+    <meta name="description" content="Especialistas em criação de sites, landing pages e e-commerce. A Okapi Code Forge transforma sua ideia em uma identidade digital única com design futurista e tecnologia de ponta." />
+    <meta name="keywords" content="criação de sites, desenvolvimento de sites, landing pages, e-commerce, React, TypeScript, soluções digitais, desenvolvedor web, frontend, design futurista, portfólio, agência digital, Okapi Code Forge" />
+    <meta name="author" content="Okapi Code Forge" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO / Social Sharing Meta Tags -->
+    <link rel="canonical" href="https://www.okapicodeforge.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.okapicodeforge.com/">
+    <meta property="og:title" content="Okapi Code Forge | Criação de Sites e Identidades Digitais">
+    <meta property="og:description" content="Transformamos ideias em realidade com a criação de sites, landing pages e e-commerces de alta performance. Design e tecnologia que definem o futuro.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1620421680783-de533941564a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.okapicodeforge.com/">
+    <meta property="twitter:title" content="Okapi Code Forge | Criação de Sites e Identidades Digitais">
+    <meta property="twitter:description" content="Transformamos ideias em realidade com a criação de sites, landing pages e e-commerces de alta performance. Design e tecnologia que definem o futuro.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1620421680783-de533941564a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              orbitron: ['Orbitron', 'sans-serif'],
+              bai: ['Bai Jamjuree', 'sans-serif'],
+            },
+            colors: {
+              'neon-pink': '#f00fb0',
+              'neon-cyan': '#0abdc6',
+              'dark-purple': '#1a0b2e',
+              'space-black': '#05020a',
+              'brand-red': '#ff4b5a',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'pulse-glow': 'pulseGlow 2.5s infinite ease-in-out',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              pulseGlow: {
+                '0%, 100%': { boxShadow: '0 0 20px #f00fb0, 0 0 30px #7e22ce' },
+                '50%': { boxShadow: '0 0 40px #f00fb0, 0 0 60px #7e22ce' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+     <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "Okapi Code Forge",
+      "url": "https://www.okapicodeforge.com/",
+      "logo": "https://www.okapicodeforge.com/favicon.svg",
+      "description": "Agência de desenvolvimento web especializada na criação de sites, landing pages e e-commerce com design futurista e tecnologia de ponta.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-84-99868-5592",
+        "contactType": "customer service"
+      },
+      "knowsAbout": ["Criação de Sites", "Desenvolvimento Web", "E-commerce", "Landing Pages", "React", "TypeScript"]
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
