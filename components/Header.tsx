@@ -43,9 +43,9 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-black/30 backdrop-blur-lg border-b border-slate-200 dark:border-gray-500/20">
       <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center">
-           <div className="flex flex-col justify-center">
-            <span className="font-orbitron font-bold text-xl leading-tight tracking-[0.15em] text-slate-900 dark:text-white">OKAPI</span>
-            <span className="font-bai font-semibold text-xs leading-tight tracking-[0.2em] -mt-1 text-brand-red">CODE FORGE®</span>
+          <div className="flex flex-col justify-center">
+            <span className="font-orbitron font-bold text-xl leading-tight tracking-[0.15em] bg-gradient-to-r from-primary via-accent to-neon-cyan text-transparent bg-clip-text drop-shadow-2xl">OKAPI</span>
+            <span className="font-bai font-semibold text-xs leading-tight tracking-[0.2em] -mt-1 text-primary">CODE FORGE®</span>
           </div>
         </a>
         <nav className="hidden md:flex items-center space-x-6">
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-pink text-white font-bold py-2 px-5 rounded-lg hover:bg-opacity-80 transition-all duration-300 shadow-[0_0_10px_rgba(240,15,176,0.5)]">
+          <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-cyan text-space-black font-bold py-2 px-5 rounded-lg transition-all duration-300 hover:bg-opacity-80 shadow-[0_0_10px_rgba(10,189,198,0.5)] transform hover:scale-105">
             Contato
           </a>
           <ThemeToggle />

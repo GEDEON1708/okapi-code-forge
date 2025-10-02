@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
-            <Logo />
+            <span className="font-orbitron font-extrabold text-2xl tracking-widest text-slate-900 dark:text-white">Okapi Code Forge</span>
             <p className="mt-4 text-slate-500 dark:text-gray-400 max-w-xs">
               Forjando o futuro da web com código, criatividade e soluções singulares.
             </p>

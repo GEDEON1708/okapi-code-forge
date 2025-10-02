@@ -1,8 +1,8 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
-import pt from '/locales/pt.json' assert { type: 'json' };
-import en from '/locales/en.json' assert { type: 'json' };
-import fr from '/locales/fr.json' assert { type: 'json' };
+import pt from '../locales/pt.json';
+import en from '../locales/en.json';
+import fr from '../locales/fr.json';
 
 const translations = { pt, en, fr };
 type Language = 'pt' | 'en' | 'fr';

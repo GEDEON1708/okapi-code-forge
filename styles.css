@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: theme('colors.background.dark');
+  color: theme('colors.text.main');
+}
+
+.dark body {
+  background-color: theme('colors.background.dark');
+  color: theme('colors.text.main');
+}
+
+body.light {
+  background-color: theme('colors.background.light');
+  color: #18181B;
+}
+
+/* Links, botões, títulos, etc. */
+a {
+  color: theme('colors.primary');
+}
+
+button, .btn {
+  background-color: theme('colors.primary');
+  color: theme('colors.text.main');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: theme('colors.text.main');
+}
+
+.text-accent {
+  color: theme('colors.accent');
+}
+.bg-accent {
+  background-color: theme('colors.accent');
+}

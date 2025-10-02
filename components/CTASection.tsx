@@ -14,7 +14,7 @@ const CTASection: React.FC = () => {
           href="https://wa.me/5584998685592?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20forjar%20meu%20projeto%20digital."
           target="_blank" 
           rel="noopener noreferrer" 
-          className="inline-block bg-neon-cyan text-space-black font-bold text-lg py-4 px-10 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(10,189,198,0.6)]"
+          className="inline-block bg-neon-cyan text-space-black font-bold text-lg py-4 px-10 rounded-lg transition-all duration-300 transform hover:bg-opacity-80 shadow-[0_0_20px_rgba(10,189,198,0.6)] hover:scale-105"
         >
           Iniciar Projeto
         </a>

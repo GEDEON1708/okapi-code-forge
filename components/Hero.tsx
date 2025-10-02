@@ -20,7 +20,8 @@ const Hero: React.FC = () => {
             href="https://wa.me/5584998685592?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-block bg-neon-pink text-white font-bold text-lg py-4 px-10 rounded-lg transition-all duration-300 transform hover:scale-105 animate-pulse-glow"
+            className="inline-block bg-primary text-slate-900 dark:text-gray-100 font-bold text-lg py-4 px-10 rounded-lg transition-all duration-300 transform hover:bg-accent hover:scale-105 shadow-[0_0_8px_#22D3EE] hover:shadow-[0_0_16px_#6366F1] focus:outline-none focus:ring-2 focus:ring-accent animate-pulse-glow"
+            style={{ boxShadow: '0 0 8px #22D3EE' }}
           >
             Vamos Construir seu Futuro
           </a>
