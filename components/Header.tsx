@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import { Sun, MoonStars } from 'lucide-react';
+import { Sun, MoonStar } from 'lucide-react';
 
 
 
@@ -15,7 +15,7 @@ const ThemeToggle: React.FC = () => {
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        <MoonStars size={24} strokeWidth={2.2} className="text-neon-cyan" />
+        <MoonStar size={24} strokeWidth={2.2} className="text-neon-cyan" />
       ) : (
         <Sun size={24} strokeWidth={2.2} className="text-yellow-300" />
       )}
