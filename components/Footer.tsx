@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from './Logo';
 
 const SocialIcon: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-gray-400 hover:text-neon-pink transition-colors duration-300">
+  <a href={href} target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-gray-400 hover:text-primary transition-colors duration-300">
     {children}
   </a>
 );

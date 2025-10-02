@@ -19,7 +19,7 @@ const Logo: React.FC = () => (
         <LogoIcon className="h-10 w-auto text-slate-900 dark:text-white" />
         <div className="flex flex-col justify-center">
             <span className="font-orbitron font-bold text-xl leading-tight tracking-[0.15em] text-slate-900 dark:text-white">OKAPI</span>
-            <span style={{color: '#ff4b5a'}} className="font-bai font-semibold text-xs leading-tight tracking-[0.2em] -mt-1">CODE FORGE®</span>
+            <span style={{color: '#6366F1'}} className="font-bai font-semibold text-xs leading-tight tracking-[0.2em] -mt-1">CODE FORGE®</span>
         </div>
     </div>
 );

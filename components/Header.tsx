@@ -50,7 +50,7 @@ const Header: React.FC = () => {
         </a>
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} onClick={(e) => scrollToSection(e, link.href)} className="text-slate-600 dark:text-gray-300 hover:text-neon-pink transition-colors duration-300 font-medium">
+            <a key={link.href} href={link.href} onClick={(e) => scrollToSection(e, link.href)} className="text-slate-600 dark:text-gray-300 hover:text-primary transition-colors duration-300 font-medium">
               {link.label}
             </a>
           ))}
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
         <div className="md:hidden bg-white/95 dark:bg-space-black/95 backdrop-blur-sm pb-4">
           <nav className="flex flex-col items-center space-y-4 pt-2">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} onClick={(e) => scrollToSection(e, link.href)} className="text-slate-600 dark:text-gray-300 hover:text-neon-pink transition-colors duration-300 font-medium text-lg py-2">
+              <a key={link.href} href={link.href} onClick={(e) => scrollToSection(e, link.href)} className="text-slate-600 dark:text-gray-300 hover:text-primary transition-colors duration-300 font-medium text-lg py-2">
                 {link.label}
               </a>
             ))}

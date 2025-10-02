@@ -19,7 +19,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, tags, liveUrl, repoUrl, width, height }) => {
   return (
-    <div className="bg-white dark:bg-dark-purple/50 rounded-xl overflow-hidden border border-slate-200 dark:border-neon-cyan/30 flex flex-col group transition-all duration-500 ease-in-out hover:border-neon-pink/80 dark:hover:shadow-[0_0_35px_rgba(240,15,176,0.6)] transform hover:-translate-y-2 shadow-lg shadow-slate-200/50 dark:shadow-none">
+  <div className="bg-white dark:bg-dark-purple/50 rounded-xl overflow-hidden border border-slate-200 dark:border-neon-cyan/30 flex flex-col group transition-all duration-500 ease-in-out hover:border-primary/80 dark:hover:shadow-[0_0_35px_#6366F1] transform hover:-translate-y-2 shadow-lg shadow-slate-200/50 dark:shadow-none">
       <div className="overflow-hidden">
           <img 
             src={image} 
@@ -32,11 +32,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, ta
           />
       </div>
       <div className="p-5 md:p-6 flex flex-col flex-grow">
-        <h3 className="text-xl md:text-2xl font-orbitron font-bold mb-3 text-slate-900 dark:text-white group-hover:text-neon-pink transition-colors duration-300">{title}</h3>
+  <h3 className="text-xl md:text-2xl font-orbitron font-bold mb-3 text-slate-900 dark:text-white group-hover:text-primary transition-colors duration-300">{title}</h3>
         <p className="text-slate-500 dark:text-gray-400 mb-4 flex-grow">{description}</p>
         <div className="flex flex-wrap gap-2 mb-6">
           {tags.map(tag => (
-            <span key={tag} className="bg-neon-cyan/20 text-neon-cyan text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 group-hover:bg-neon-pink/20 group-hover:text-neon-pink">{tag}</span>
+            <span key={tag} className="bg-neon-cyan/20 text-neon-cyan text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 group-hover:bg-primary/20 group-hover:text-primary">{tag}</span>
           ))}
         </div>
         <div className="mt-auto flex items-center justify-between">

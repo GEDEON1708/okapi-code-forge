@@ -5,7 +5,7 @@ const CTASection: React.FC = () => {
     <section className="py-20 md:py-28 text-center bg-slate-100 dark:bg-gradient-to-t dark:from-dark-purple dark:to-space-black">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-5xl font-orbitron font-bold mb-4 text-slate-900 dark:text-white">
-          Pronto para <span className="text-neon-pink">Forjar</span> seu Futuro Digital?
+          Pronto para <span className="text-primary">Forjar</span> seu Futuro Digital?
         </h2>
         <p className="text-lg md:text-xl max-w-3xl mx-auto text-slate-600 dark:text-gray-300 mb-8">
           Sua ideia merece uma identidade digital única. Vamos conversar sobre como podemos transformar sua visão em realidade.

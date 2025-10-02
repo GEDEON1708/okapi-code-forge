@@ -13,8 +13,8 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => (
-  <div className="bg-white dark:bg-dark-purple/50 p-8 rounded-xl border border-slate-200 dark:border-neon-pink/30 group hover:border-neon-pink transition-all duration-300 transform hover:-translate-y-2 shadow-lg shadow-slate-200/50 dark:shadow-none">
-    <div className="text-neon-pink mb-4 group-hover:scale-110 transition-transform duration-300">
+  <div className="bg-white dark:bg-dark-purple/50 p-8 rounded-xl border border-slate-200 dark:border-primary/30 group hover:border-primary transition-all duration-300 transform hover:-translate-y-2 shadow-lg shadow-slate-200/50 dark:shadow-none">
+  <div className="text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>
     <h3 className="text-2xl font-orbitron font-bold mb-3 text-slate-900 dark:text-white">{title}</h3>
@@ -50,7 +50,7 @@ const Services: React.FC = () => {
     <section id="services" className="py-20 md:py-28">
       <div className="container mx-auto px-6">
         <SectionTitle>
-          Nossos <span className="text-neon-pink">Serviços</span>
+          Nossos <span className="text-primary">Serviços</span>
         </SectionTitle>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (

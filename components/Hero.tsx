@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 container mx-auto px-6 flex flex-col items-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-orbitron font-extrabold tracking-tighter mb-4">
-            <span className="bg-gradient-to-r from-neon-pink via-purple-500 to-neon-cyan text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-primary via-accent to-neon-cyan text-transparent bg-clip-text">
               Forjando Identidades
             </span>
             <span className="block text-slate-900 dark:text-white">Digitais Únicas</span>
