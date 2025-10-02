@@ -64,7 +64,7 @@ const App: React.FC = () => {
     const timer = setTimeout(() => {
       setLoading(false);
       document.body.style.overflow = 'auto';
-    }, 3000); // 3 seconds
+    }, 2300); // 2.3 seconds
 
     return () => {
         clearTimeout(timer);
