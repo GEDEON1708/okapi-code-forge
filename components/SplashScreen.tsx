@@ -22,15 +22,14 @@ const SplashScreen: React.FC = () => {
         </svg>
       </div>
 
-      {/* Glow atrás do logo com movimento */}
+      {/* Glow atrás do logo com movimento, sem borda */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none animate-glow-move">
         <div style={{
           width: '420px',
           height: '420px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(126,34,206,0.22) 0%, rgba(39,38,64,0.7) 60%, rgba(5,2,10,0.95) 100%)',
-          filter: 'blur(32px)',
-          boxShadow: '0 0 80px 30px #272640, 0 0 120px 60px #05020a',
+          background: 'radial-gradient(circle, rgba(126,34,206,0.32) 0%, rgba(39,38,64,0.7) 60%, rgba(5,2,10,0.95) 100%)',
+          filter: 'blur(48px)',
         }} />
       </div>
 
@@ -55,19 +54,19 @@ const SplashScreen: React.FC = () => {
         }
         @keyframes bgMove {
           0% { transform: scale(1) translateY(0); }
-          50% { transform: scale(1.05) translateY(-20px); }
+          50% { transform: scale(1.08) translateY(-30px); }
           100% { transform: scale(1) translateY(0); }
         }
         .animate-bg-move {
-          animation: bgMove 3s ease-in-out infinite;
+          animation: bgMove 1.5s ease-in-out infinite;
         }
         @keyframes glowMove {
           0% { transform: scale(1) translateY(0); opacity: 0.8; }
-          50% { transform: scale(1.08) translateY(-10px); opacity: 1; }
+          50% { transform: scale(1.12) translateY(-18px); opacity: 1; }
           100% { transform: scale(1) translateY(0); opacity: 0.8; }
         }
         .animate-glow-move {
-          animation: glowMove 3s ease-in-out infinite;
+          animation: glowMove 1.5s ease-in-out infinite;
         }
       `}</style>
     </div>

@@ -1,22 +1,27 @@
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 
+
 const ThemeToggle: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full text-gray-400 hover:bg-black/10 dark:hover:bg-white/10 focus:outline-none transition-colors duration-200"
+      className="p-2 rounded-full text-gray-400 hover:bg-[#272640]/30 dark:hover:bg-[#05020a]/30 focus:outline-none transition-colors duration-200"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.536a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM5.929 14.071a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM4 10a1 1 0 01-1-1H2a1 1 0 110-2h1a1 1 0 011 1zm11.464-.536a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM14.071 5.929a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707z" clipRule="evenodd" />
+        // Ícone tecnológico para dark mode
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-neon-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="7" stroke="#0abdc6" strokeWidth="2" fill="#272640" />
+          <path d="M12 5V3M12 21v-2M5 12H3M21 12h-2M7.8 7.8L6.4 6.4M16.2 16.2l1.4 1.4M16.2 7.8l1.4-1.4M7.8 16.2l-1.4 1.4" stroke="#0abdc6" strokeWidth="2" />
         </svg>
       ) : (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        // Ícone tecnológico para light mode
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="7" stroke="#facc15" strokeWidth="2" fill="#fff" />
+          <path d="M12 5V3M12 21v-2M5 12H3M21 12h-2M7.8 7.8L6.4 6.4M16.2 16.2l1.4 1.4M16.2 7.8l1.4-1.4M7.8 16.2l-1.4 1.4" stroke="#facc15" strokeWidth="2" />
         </svg>
       )}
     </button>
