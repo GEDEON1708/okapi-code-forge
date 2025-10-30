@@ -87,6 +87,8 @@ const LangSelector: React.FC = () => {
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useI18n();
+  const waText = encodeURIComponent(t.cta.whatsapp_message);
+  const waLink = `https://wa.me/5584998685592?text=${waText}`;
 
   const navLinks = [
     { label: t.nav.about, href: '#about' },
@@ -115,7 +117,7 @@ const Header: React.FC = () => {
               {link.label}
             </a>
           ))}
-              <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-cyan text-space-black font-bold py-2 px-5 rounded-lg transition-all duration-300 hover:bg-opacity-80 shadow-[0_0_10px_rgba(10,189,198,0.5)] transform hover:scale-105">
+              <a href={waLink} target="_blank" rel="noopener noreferrer" className="bg-neon-cyan text-space-black font-bold py-2 px-5 rounded-lg transition-all duration-300 hover:bg-opacity-80 shadow-[0_0_10px_rgba(10,189,198,0.5)] transform hover:scale-105">
                 {t.nav.contact}
           </a>
               <LangSelector />
@@ -139,7 +141,7 @@ const Header: React.FC = () => {
                 {link.label}
               </a>
             ))}
-                <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-pink text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-80 transition-all duration-300 shadow-[0_0_10px_rgba(240,15,176,0.5)] mt-2">
+                <a href={waLink} target="_blank" rel="noopener noreferrer" className="bg-neon-pink text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-80 transition-all duration-300 shadow-[0_0_10px_rgba(240,15,176,0.5)] mt-2">
                   {t.nav.contact_mobile}
                 </a>
                 <div className="pt-2"><LangSelector /></div>
