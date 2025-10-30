@@ -1,11 +1,11 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext, useCallback } from 'react';
 
 import pt from '../locales/pt.json';
 import en from '../locales/en.json';
 import fr from '../locales/fr.json';
 
 const translations = { pt, en, fr };
-type Language = 'pt' | 'en' | 'fr';
+export type Language = 'pt' | 'en' | 'fr';
 
 // Usamos 'typeof pt' para garantir que todos os arquivos de idioma tenham a mesma estrutura
 type TranslationKeys = typeof pt;
@@ -19,15 +19,13 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pt');
+  // Carrega primeiro em PT, e somente altera se houver preferência salva
+  const [language, setLanguageState] = useState<Language>('pt');
 
   useEffect(() => {
-    // Detecta o idioma do navegador na montagem inicial
-    const userLang = navigator.language.split('-')[0] as Language;
-    if (userLang === 'en' || userLang === 'fr') {
-      setLanguage(userLang);
-    } else {
-      setLanguage('pt'); // Padrão para português
+    const stored = (typeof window !== 'undefined' && localStorage.getItem('lang')) as Language | null;
+    if (stored === 'pt' || stored === 'en' || stored === 'fr') {
+      setLanguageState(stored);
     }
   }, []);
   
@@ -35,6 +33,13 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // Atualiza o atributo lang da tag <html> para acessibilidade e SEO
     document.documentElement.lang = language;
   }, [language]);
+
+  const setLanguage = useCallback((lang: Language) => {
+    setLanguageState(lang);
+    try {
+      localStorage.setItem('lang', lang);
+    } catch {}
+  }, []);
 
   const t = translations[language];
 

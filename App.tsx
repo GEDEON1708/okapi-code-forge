@@ -8,6 +8,7 @@ import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import SplashScreen from './components/SplashScreen';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { I18nProvider } from './contexts/I18nContext';
 
 // Componente wrapper para aplicar animações de scroll
 const AnimatedSection: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -73,10 +74,10 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <ThemeProvider>
-      <div 
+      <ThemeProvider>
+        <I18nProvider>
+      <div
         className={`fixed inset-0 z-[100] transition-opacity duration-1000 ease-in-out ${loading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-        aria-hidden={!loading}
       >
         <SplashScreen />
       </div>
@@ -104,7 +105,8 @@ const App: React.FC = () => {
         </main>
         <Footer />
       </div>
-    </ThemeProvider>
+        </I18nProvider>
+      </ThemeProvider>
   );
 };
 

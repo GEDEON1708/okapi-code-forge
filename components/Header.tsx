@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import { Sun, MoonStar } from 'lucide-react';
+import { Sun, MoonStar, Languages } from 'lucide-react';
+import { useI18n, type Language } from '../contexts/I18nContext';
 
 
 
@@ -24,13 +25,56 @@ const ThemeToggle: React.FC = () => {
 };
 
 
+// Seletor de Idiomas (desktop e mobile)
+const LangSelector: React.FC = () => {
+  const { language, setLanguage } = useI18n();
+  const [open, setOpen] = useState(false);
+
+  const options: { code: Language; label: string }[] = [
+    { code: 'pt', label: 'Português' },
+    { code: 'en', label: 'English' },
+    { code: 'fr', label: 'Français' },
+  ];
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="flex items-center gap-2 px-3 py-2 rounded-lg text-slate-700 dark:text-gray-200 hover:bg-slate-200/60 dark:hover:bg-white/10 border border-transparent hover:border-slate-300/30 dark:hover:border-white/10 transition-colors duration-200"
+        aria-label="Selecionar idioma"
+      >
+        <Languages size={20} className="text-primary" />
+        <span className="text-sm font-medium uppercase tracking-wide">{language}</span>
+      </button>
+      {open && (
+        <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-space-black border border-slate-200/70 dark:border-white/10 rounded-xl shadow-lg overflow-hidden z-50">
+          {options.map((opt) => (
+            <button
+              key={opt.code}
+              onClick={() => {
+                setLanguage(opt.code);
+                setOpen(false);
+              }}
+              className={`w-full text-left px-4 py-2 text-sm transition-colors duration-150 hover:bg-slate-100 dark:hover:bg-white/10 ${language === opt.code ? 'text-primary font-semibold' : 'text-slate-700 dark:text-gray-200'}`}
+              aria-label={`Mudar idioma para ${opt.label}`}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useI18n();
 
   const navLinks = [
-    { label: 'Sobre', href: '#about' },
-    { label: 'Serviços', href: '#services' },
-    { label: 'Projetos', href: '#projects' },
+    { label: t.nav.about, href: '#about' },
+    { label: t.nav.services, href: '#services' },
+    { label: t.nav.projects, href: '#projects' },
   ];
   
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -54,12 +98,14 @@ const Header: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-cyan text-space-black font-bold py-2 px-5 rounded-lg transition-all duration-300 hover:bg-opacity-80 shadow-[0_0_10px_rgba(10,189,198,0.5)] transform hover:scale-105">
-            Contato
+              <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-cyan text-space-black font-bold py-2 px-5 rounded-lg transition-all duration-300 hover:bg-opacity-80 shadow-[0_0_10px_rgba(10,189,198,0.5)] transform hover:scale-105">
+                {t.nav.contact}
           </a>
+              <LangSelector />
           <ThemeToggle />
         </nav>
         <div className="md:hidden flex items-center space-x-2">
+              <LangSelector />
           <ThemeToggle />
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-slate-800 dark:text-white focus:outline-none p-2 -m-2 rounded-md" aria-label="Abrir menu">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -76,9 +122,10 @@ const Header: React.FC = () => {
                 {link.label}
               </a>
             ))}
-            <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-pink text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-80 transition-all duration-300 shadow-[0_0_10px_rgba(240,15,176,0.5)] mt-2">
-              Entre em Contato
-            </a>
+                <a href="https://wa.me/5584998685592" target="_blank" rel="noopener noreferrer" className="bg-neon-pink text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-80 transition-all duration-300 shadow-[0_0_10px_rgba(240,15,176,0.5)] mt-2">
+                  {t.nav.contact_mobile}
+                </a>
+                <div className="pt-2"><LangSelector /></div>
           </nav>
         </div>
       )}
