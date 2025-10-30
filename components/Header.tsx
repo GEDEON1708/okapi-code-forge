@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import { Sun, MoonStar, Languages } from 'lucide-react';
 import { useI18n, type Language } from '../contexts/I18nContext';
@@ -29,6 +29,7 @@ const ThemeToggle: React.FC = () => {
 const LangSelector: React.FC = () => {
   const { language, setLanguage } = useI18n();
   const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   const options: { code: Language; label: string }[] = [
     { code: 'pt', label: 'Português' },
@@ -36,8 +37,24 @@ const LangSelector: React.FC = () => {
     { code: 'fr', label: 'Français' },
   ];
 
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (!ref.current) return;
+      if (!ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('mousedown', onClick);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onClick);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, []);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen((o) => !o)}
         className="flex items-center gap-2 px-3 py-2 rounded-lg text-slate-700 dark:text-gray-200 hover:bg-slate-200/60 dark:hover:bg-white/10 border border-transparent hover:border-slate-300/30 dark:hover:border-white/10 transition-colors duration-200"
