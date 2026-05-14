@@ -1,0 +1,378 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Sobre",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "contact_mobile": "Entre em Contato",
+    "pricing": "Planos"
+  },
+  "hero": {
+    "title1": "Sites que elevam",
+    "title2": "marcas.",
+    "subtitle": "A Okapi Code Forge cria sites profissionais, lojas virtuais, e-commerces e CRMs sob medida — soluções digitais únicas para marcas que querem crescer de verdade.",
+    "cta": "Vamos Construir seu Futuro",
+    "offer_badge": "",
+    "offer_badge_aria": ""
+  },
+  "about": {
+    "title1": "Inspirados pela",
+    "title2": "Singularidade",
+    "p1": "O Okapi, um animal enigmático da floresta tropical, é conhecido por sua pelagem única — uma mistura que desafia a categorização. Nenhuma pelagem é igual à outra. Essa diversidade inspiradora é o cerne da nossa filosofia na Okapi Code Forge.",
+    "p2": "Acreditamos que cada negócio, assim como o Okapi, possui uma identidade singular que merece ser destacada. Rejeitamos soluções genéricas. Em vez disso, mergulhamos na essência da sua marca para forjar uma presença digital que é inconfundivelmente sua.",
+    "p3": "Nossa missão é criar uma solução digital tão única quanto a sua visão, combinando design futurista com a mais robusta tecnologia."
+  },
+  "services": {
+    "title1": "Nossos",
+    "title2": "Serviços",
+    "cards": {
+      "business": {
+        "title": "Sites Empresariais",
+        "description": "Construímos a presença online da sua empresa com um site profissional, responsivo e otimizado para SEO, refletindo a sua marca com perfeição."
+      },
+      "landing": {
+        "title": "Landing Pages",
+        "description": "Páginas de destino focadas em conversão, com design cativante e copy persuasiva para maximizar o resultado de suas campanhas de marketing."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Lojas virtuais completas, seguras e escaláveis. Ofereça a melhor experiência de compra para seus clientes e impulsione suas vendas online."
+      },
+      "traffic": {
+        "title": "Gestão de Tráfego",
+        "description": "Atraímos o público certo para o seu negócio com estratégias de tráfego pago e orgânico, gerando mais leads, vendas e visibilidade para sua marca."
+      },
+      "more": {
+        "title": "E muito mais...",
+        "description": "Nossa forja está sempre ativa. Em breve, ofereceremos novas soluções digitais para levar seu negócio a patamares ainda mais altos. Fique ligado!"
+      }
+    }
+  },
+  "projects": {
+    "title1": "Projetos em",
+    "title2": "Destaque",
+    "cta_view": "Ver Site",
+    "cta_platform": "Ver Plataforma",
+    "cta_github": "GitHub",
+    "cards": {
+      "busca_sousa": {
+        "title": "Busca Sousa",
+        "description": "Plataforma inovadora para conectar usuários a comércios e serviços locais na cidade de Sousa-PB, fortalecendo a economia local."
+      },
+      "okapi_watch": {
+        "title": "Okapi Watch Store",
+        "description": "E-commerce elegante para venda de relógios, com foco em uma experiência de usuário fluida e design sofisticado."
+      },
+      "coffee_store": {
+        "title": "Coffee Store Page",
+        "description": "Landing page imersiva para uma cafeteria, projetada para cativar os amantes de café com um visual aconchegante e informações ricas."
+      },
+      "cgk_consultoria": {
+        "title": "CGK Consultoria",
+        "description": "Site institucional focado em clareza, credibilidade e geração de leads para serviços de consultoria empresarial."
+      },
+      "okapi_flow": {
+        "title": "Okapi Flow",
+        "description": "E-commerce premium de moda masculina com catálogo completo, integração com Mercado Pago, carrinho persistente e sistema de descontos progressivos."
+      },
+      "regula_on": {
+        "title": "RegulaOn",
+        "description": "Plataforma de regularização empresarial que oferece suporte humano + plataforma online para gerenciamento de licenças, AVCB e documentação."
+      },
+      "elite_moveis": {
+        "title": "Elite Móveis Luxury",
+        "description": "E-commerce sofisticado de móveis de luxo, com catálogo visual premium, filtros por ambiente e experiência de compra imersiva."
+      },
+      "auto_flow": {
+        "title": "Auto-Flow",
+        "description": "Site empresarial focado em automação de processos, apresentando soluções inteligentes para otimizar o fluxo de trabalho e impulsionar a produtividade de negócios modernos."
+      },
+      "auto_elite": {
+        "title": "Auto Elite Brasil",
+        "description": "Plataforma de vendas de veículos premium com busca avançada, galeria em alta resolução e formulário de proposta integrado."
+      },
+      "clinica_lumiere": {
+        "title": "Clínica Lumière",
+        "description": "Site institucional para clínica estética com agendamento online, apresentação de tratamentos e identidade visual elegante."
+      },
+      "site_imobiliario": {
+        "title": "Imobiliária Digital",
+        "description": "Portal imobiliário moderno com listagem de imóveis, filtros por localização e tipo, e integração com WhatsApp para contato direto."
+      },
+      "site_empresarial": {
+        "title": "Engenharia Geotécnica",
+        "description": "Site institucional para empresa de engenharia geotécnica especializada em estabilidade de taludes, instrumentação, monitoramento e controle de risco em estruturas críticas."
+      },
+      "erp_ocf": {
+        "title": "ERP-OCF",
+        "description": "Sistema ERP completo para gestão empresarial integrada, com módulos de pedidos, estoque, financeiro e controle operacional para a Okapi Code Forge."
+      }
+    }
+  },
+  "cta": {
+    "title1": "Pronto para",
+    "title2": "Forjar",
+    "title3": "seu Futuro Digital?",
+    "subtitle": "Sua ideia merece uma identidade digital única. Vamos conversar sobre como podemos transformar sua visão em realidade.",
+    "button": "Iniciar Projeto",
+    "whatsapp_message": "Olá! Vi o site da Okapi Code Forge e quero forjar meu projeto digital. Podemos conversar?",
+    "form": {
+      "badge": "Captação de Leads",
+      "title1": "Vamos conversar sobre seu",
+      "title2": "projeto?",
+      "subtitle": "Preencha o formulário e escolha o canal de envio. Retornaremos com uma proposta estratégica para o seu negócio.",
+      "name_label": "Nome completo",
+      "email_label": "Email",
+      "phone_label": "WhatsApp",
+      "company_label": "Empresa (opcional)",
+      "service_label": "Serviço desejado",
+      "message_label": "Detalhes do projeto",
+      "message_placeholder": "Conte o que você precisa, prazo e objetivos principais.",
+      "privacy_note": "Ao enviar, você concorda com o contato da nossa equipe por email ou WhatsApp.",
+      "submit_email": "Enviar por Email",
+      "submit_email_loading": "Enviando por Email...",
+      "submit_whatsapp": "Enviar no WhatsApp",
+      "submit_whatsapp_loading": "Enviando no WhatsApp...",
+      "submit_error": "Não foi possível enviar seu contato agora. Tente novamente em instantes.",
+      "email_subject": "Novo lead pelo site - Okapi Code Forge",
+      "not_provided": "-",
+      "thank_you_title": "Obrigado! Recebemos seu contato.",
+      "thank_you_email": "Recebemos seus dados com preferência de contato por e-mail. Nossa equipe retornará em breve.",
+      "thank_you_whatsapp": "Seus dados foram salvos e o WhatsApp Business da empresa foi aberto com a mensagem pronta. Para concluir, toque em Enviar no WhatsApp.",
+      "send_another": "Voltar ao site",
+      "direct_title": "Contato direto",
+      "direct_email": "Prefere email direto?",
+      "direct_whatsapp": "Prefere WhatsApp?",
+      "lead_message": {
+        "title": "Novo lead recebido pelo site da Okapi Code Forge",
+        "name": "Nome",
+        "email": "Email",
+        "phone": "WhatsApp",
+        "company": "Empresa",
+        "service": "Serviço",
+        "message": "Mensagem"
+      },
+      "services": {
+        "website": "Site institucional",
+        "landing": "Landing page",
+        "ecommerce": "E-commerce",
+        "other": "Outro"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Forjando o futuro da web com código, criatividade e soluções singulares.",
+    "contact_title": "Contato Rápido",
+    "social_title": "Siga-nos",
+    "rights": "Todos os direitos reservados",
+    "privacy_policy": "Política de Privacidade"
+  },
+  "maintenance": {
+    "title": "Estamos atualizando",
+    "subtitle": "Novas funcionalidades estão chegando. Voltamos em instantes.",
+    "tip": "Obrigado pela paciência!"
+  },
+  "seo": {
+    "title": "Okapi Code Forge | Criação de Sites e Soluções Web",
+    "description": "A Okapi Code Forge cria sites profissionais, lojas virtuais, e-commerces e CRMs sob medida — soluções digitais únicas para marcas que querem crescer de verdade."
+  },
+  "pricing": {
+    "title1": "Nossos",
+    "title2": "Planos",
+    "subtitle": "Soluções digitais sob medida para cada estágio do seu negócio. Escolha o plano ideal e comece agora.",
+    "popular_badge": "Mais Popular",
+    "cta": "Quero Este Plano",
+    "footer_note": "Todos os projetos incluem reunião de briefing, contrato digital e suporte pós-entrega. Dúvidas? Fale com a gente.",
+    "plans": {
+      "presenca": {
+        "name": "Presença",
+        "category": "Identidade Digital & Presença Institucional",
+        "tagline": "Seja encontrado, construa autoridade e desperte o interesse de quem ainda não te conhece.",
+        "whatsapp_message": "Olá, Okapi Code Forge! Vim pelo site e tenho interesse no Plano Presença (Landing Page / Site Institucional). Gostaria de saber mais detalhes e iniciar meu projeto.",
+        "features": [
+          {
+            "text": "Design exclusivo, criado do zero",
+            "included": true
+          },
+          {
+            "text": "Paleta de cores estratégica da marca",
+            "included": true
+          },
+          {
+            "text": "Copywriting e Storytelling",
+            "included": true
+          },
+          {
+            "text": "Site 100% responsivo (mobile, tablet, desktop)",
+            "included": true
+          },
+          {
+            "text": "SEO on-page básico",
+            "included": true
+          },
+          {
+            "text": "Integração com WhatsApp e redes sociais",
+            "included": true
+          },
+          {
+            "text": "Até 5 seções personalizadas",
+            "included": true
+          },
+          {
+            "text": "Entrega em até 10 dias úteis",
+            "included": true
+          },
+          {
+            "text": "30 dias de suporte pós-entrega",
+            "included": true
+          },
+          {
+            "text": "Google Analytics + Meta Pixel",
+            "included": false
+          },
+          {
+            "text": "E-commerce / Loja Virtual",
+            "included": false
+          }
+        ]
+      },
+      "nexus": {
+        "name": "Nexus",
+        "category": "Automação & Ferramentas para Negócios Locais",
+        "tagline": "O ponto central que conecta seu negócio ao cliente — agenda, atendimento e cardápio no piloto automático.",
+        "whatsapp_message": "Olá, Okapi Code Forge! Vim pelo site e tenho interesse no Plano Nexus (Automação & Ferramentas para Negócios Locais). Quero automatizar meu atendimento e facilitar minha gestão. Podemos conversar?",
+        "features": [
+          {
+            "text": "Cardápio digital com QR Code personalizado",
+            "included": true
+          },
+          {
+            "text": "Sistema de agendamento online (barbearia, salão, clínica)",
+            "included": true
+          },
+          {
+            "text": "Automação de mensagens via WhatsApp e/ou Telegram",
+            "included": true
+          },
+          {
+            "text": "Notificações automáticas de confirmação e lembrete",
+            "included": true
+          },
+          {
+            "text": "Design responsivo e personalizado",
+            "included": true
+          },
+          {
+            "text": "Integração com redes sociais",
+            "included": true
+          },
+          {
+            "text": "Painel simples de gestão",
+            "included": true
+          },
+          {
+            "text": "Entrega em até 15 dias úteis",
+            "included": true
+          },
+          {
+            "text": "15 dias de suporte pós-entrega",
+            "included": true
+          }
+        ]
+      },
+      "negocio": {
+        "name": "Negócio",
+        "category": "Site Empresarial Completo",
+        "tagline": "Capte leads qualificados, fortaleça sua autoridade e converta visitantes em clientes fiéis.",
+        "whatsapp_message": "Olá, Okapi Code Forge! Vim pelo site e tenho interesse no Plano Negócio (Site Empresarial Completo). Gostaria de apresentar minha empresa e iniciar o projeto.",
+        "features": [
+          {
+            "text": "Design exclusivo, SEO e Copywriting profissional",
+            "included": true
+          },
+          {
+            "text": "Até 10 seções + Blog ou seção de notícias",
+            "included": true
+          },
+          {
+            "text": "Animações e microinterações avançadas",
+            "included": true
+          },
+          {
+            "text": "Formulário de captação de leads integrado",
+            "included": true
+          },
+          {
+            "text": "Google Analytics + Meta Pixel configurados",
+            "included": true
+          },
+          {
+            "text": "SEO avançado + sitemap",
+            "included": true
+          },
+          {
+            "text": "Entrega em até 20 dias úteis",
+            "included": true
+          },
+          {
+            "text": "60 dias de suporte pós-entrega",
+            "included": true
+          },
+          {
+            "text": "E-commerce / Loja Virtual",
+            "included": false
+          }
+        ]
+      },
+      "elite": {
+        "name": "Elite",
+        "category": "E-commerce / Loja Virtual / CRM",
+        "tagline": "Venda 24h por dia com loja virtual completa, CRM e automações — seu negócio no modo automático.",
+        "whatsapp_message": "Olá, Okapi Code Forge! Vim pelo site e tenho interesse no Plano Elite (E-commerce / Loja Virtual / CRM). Quero uma plataforma digital completa para o meu negócio. Podemos conversar?",
+        "features": [
+          {
+            "text": "Site empresarial completo + captação de leads + Analytics",
+            "included": true
+          },
+          {
+            "text": "Loja virtual completa com carrinho e checkout",
+            "included": true
+          },
+          {
+            "text": "Integração com Mercado Pago, PIX e cartão",
+            "included": true
+          },
+          {
+            "text": "Gestão completa de produtos e estoque",
+            "included": true
+          },
+          {
+            "text": "Painel administrativo personalizado",
+            "included": true
+          },
+          {
+            "text": "Sistema de cupons e descontos progressivos",
+            "included": true
+          },
+          {
+            "text": "CRM sob medida (gestão de clientes e pedidos)",
+            "included": true
+          },
+          {
+            "text": "Integrações com APIs e automações",
+            "included": true
+          },
+          {
+            "text": "Entrega em até 45 dias úteis",
+            "included": true
+          },
+          {
+            "text": "90 dias de suporte + 1 mês de manutenção incluso",
+            "included": true
+          }
+        ]
+      }
+    }
+  }
+}

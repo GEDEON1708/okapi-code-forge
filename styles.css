@@ -1,0 +1,224 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-bai: "Bai Jamjuree", sans-serif;
+
+  --color-primary: #6366f1;
+  --color-accent: #22d3ee;
+  --color-neon-pink: #f00fb0;
+  --color-neon-cyan: #0abdc6;
+  --color-dark-purple: #1a0b2e;
+  --color-space-black: #05020a;
+  --color-brand-red: #ff4b5a;
+  --color-neon-green: #00e5a0;
+
+  --color-background-dark: #18181b;
+  --color-background-light: #f9fafb;
+
+  --color-text-main: #f3f4f6;
+  --color-text-secondary: #a1a1aa;
+
+  --animate-fade-in-up: fade-in-up 1s ease-out forwards;
+  --animate-pulse-glow: pulse-glow 2.5s infinite ease-in-out;
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      box-shadow: 0 0 20px #22d3ee, 0 0 30px #6366f1;
+    }
+    50% {
+      box-shadow: 0 0 40px #22d3ee, 0 0 60px #6366f1;
+    }
+  }
+
+  /* Dot grid ocean wave — deriva contínua (rolamento) + swell vertical (elevação) */
+  @keyframes wave-drift {
+    /* Cada camada avança exatamente um múltiplo do seu tile → loop perfeitamente seamless */
+    from { background-position-x: 0px,  0px; }
+    to   { background-position-x: 28px, 22px; }
+  }
+
+  @keyframes wave-swell {
+    /* Sobe na crista, desce no vale — simula elevação da onda */
+    0%   { background-position-y: 0px,  0px; }
+    25%  { background-position-y: -9px, -5px; }
+    50%  { background-position-y: 0px,  0px; }
+    75%  { background-position-y: 9px,  5px; }
+    100% { background-position-y: 0px,  0px; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-700 dark:bg-space-black dark:text-gray-200 transition-colors duration-500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-orbitron text-slate-900 dark:text-white;
+  }
+}
+
+/* Dot grid — fora de @layer para máxima prioridade na cascata */
+.dot-grid {
+  background-image:
+    radial-gradient(circle, rgba(99, 102, 241, 0.30) 1px, transparent 1px),
+    radial-gradient(circle, rgba(10, 189, 198, 0.18) 1.5px, transparent 1.5px);
+  background-size: 28px 28px, 44px 44px;
+  will-change: background-position;
+  animation:
+    wave-drift 10s linear infinite,
+    wave-swell  7s ease-in-out infinite;
+}
+
+:where(.dark, .dark *) .dot-grid,
+.dark .dot-grid {
+  background-image:
+    radial-gradient(circle, rgba(99, 102, 241, 0.22) 1px, transparent 1px),
+    radial-gradient(circle, rgba(10, 189, 198, 0.09) 1.5px, transparent 1.5px);
+  background-size: 28px 28px, 44px 44px;
+  animation:
+    wave-drift 10s linear infinite,
+    wave-swell  7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot-grid {
+    animation: none;
+  }
+}
+
+@layer components {
+
+  .btn-glass {
+    position: relative;
+    isolation: isolate;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    transition:
+      transform 220ms ease,
+      box-shadow 220ms ease,
+      border-color 220ms ease,
+      opacity 220ms ease;
+  }
+
+  .btn-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.02) 45%);
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  .btn-glass:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.36);
+  }
+
+  .btn-glass:active {
+    transform: translateY(0);
+  }
+
+  .btn-glass:focus-visible {
+    outline: 2px solid rgba(34, 211, 238, 0.75);
+    outline-offset: 2px;
+  }
+
+  .btn-glass-primary {
+    color: #eef2ff;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.78), rgba(67, 56, 202, 0.65));
+    border-color: rgba(165, 180, 252, 0.58);
+  }
+
+  .btn-glass-cyan {
+    color: #02161f;
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.8), rgba(14, 165, 233, 0.68));
+    border-color: rgba(165, 243, 252, 0.58);
+  }
+
+  .btn-glass-pink {
+    color: #fff7fb;
+    background: linear-gradient(135deg, rgba(240, 15, 176, 0.8), rgba(190, 24, 93, 0.65));
+    border-color: rgba(251, 207, 232, 0.5);
+  }
+
+  .btn-glass-ghost {
+    color: #f8fafc;
+    background: linear-gradient(135deg, rgba(148, 163, 184, 0.26), rgba(71, 85, 105, 0.24));
+    border-color: rgba(148, 163, 184, 0.42);
+  }
+
+  .menu-glass-hover {
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    transition:
+      color 220ms ease,
+      transform 220ms ease,
+      background-color 220ms ease,
+      border-color 220ms ease,
+      box-shadow 220ms ease;
+  }
+
+  .menu-glass-hover:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.15));
+    border-color: rgba(148, 163, 184, 0.45);
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+    transform: translateY(-1px);
+  }
+
+  .menu-glass-hover:focus-visible {
+    outline: 2px solid rgba(99, 102, 241, 0.55);
+    outline-offset: 2px;
+  }
+
+  .dark .menu-glass-hover:hover {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.58), rgba(15, 23, 42, 0.44));
+    border-color: rgba(125, 211, 252, 0.42);
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.46), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  }
+
+  .dark .btn-glass {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 26px rgba(2, 6, 23, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  }
+
+  .offer-price-highlight {
+    display: inline-block;
+    margin-inline: 0.2rem;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.02em;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #6366f1 0%, #22d3ee 52%, #0abdc6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 14px rgba(99, 102, 241, 0.12);
+  }
+}
