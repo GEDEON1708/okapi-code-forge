@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
           <h4 className="font-semibold text-slate-900 dark:text-white mb-3">{t.footer.social_title}</h4>
           <div className="flex items-center gap-4 text-sm">
             <a href="https://github.com/GEDEON1708" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub</a>
-            <a href="https://www.instagram.com/okapicodeforge/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Instagram</a>
+            <a href="https://www.instagram.com/okapi.code?igsh=MWRmZ3pseDc1OHZ0NQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Instagram</a>
           </div>
         </div>
       </div>
